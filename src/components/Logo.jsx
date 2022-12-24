@@ -5,7 +5,7 @@ import logo from '../assets/logo.png'
 const Logo = () => {
   return (
     <div>
-        <Link to={'/'}><img src={logo} alt="logo" width="70" height="45" title="Home"/></Link>
+        <Link to={'/'}><img src={logo} alt="logo" width="90" height="60" title="Home" className='logo'/></Link>
     </div>
   )
 }

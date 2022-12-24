@@ -1,13 +1,13 @@
 import React from 'react'
 import NavBar from './NavBar'
 
-const PlantaPiedra = () => {
+const Cactus = () => {
   return (
     <>
     <NavBar />
-    <div>Planta piedra</div>
+    <div>Cactus</div>
 </>
   )
 }
 
-export default PlantaPiedra
+export default Cactus

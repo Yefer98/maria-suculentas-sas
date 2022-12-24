@@ -4,9 +4,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./components/Home";
 import Registro from "./components/Registro";
 import ControlProveedores from "./components/ControlProveedores";
-import Roseta from "./components/Roseta";
-import Argyroderma from "./components/Argyroderma";
-import PlantaPiedra from "./components/PlantaPiedra";
+import Exterior from "./components/Exterior";
+import Interior from "./components/Interior";
+import Cactus from "./components/Cactus";
 
 const routes = createBrowserRouter([
   {
@@ -22,16 +22,16 @@ const routes = createBrowserRouter([
     element: <ControlProveedores />
   },
   {
-    path: '/roseta',
-    element: <Roseta />
+    path: '/exterior',
+    element: <Exterior />
   },
   {
-    path: '/argyroderma',
-    element: <Argyroderma />
+    path: '/interior',
+    element: <Interior />
   },
   {
-    path: '/planta-piedra',
-    element: <PlantaPiedra />
+    path: '/cactus',
+    element: <Cactus />
   }
 ]);
 

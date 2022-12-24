@@ -1,13 +1,13 @@
 import React from 'react'
 import NavBar from './NavBar'
 
-const Roseta = () => {
+const Interior = () => {
   return (
     <>
         <NavBar />
-        <div>Roseta</div>
+        <div>interior</div>
     </>
   )
 }
 
-export default Roseta
+export default Interior

@@ -49,18 +49,18 @@ const NavBar = () => {
               </a>
               <ul className="dropdown-menu">
                 <li>
-                  <NavLink to={'/roseta'} className="nav-link">
-                    Roseta
+                  <NavLink to={'/exterior'} className="nav-link">
+                    Para el exterior
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to={'/argyroderma'} className="nav-link">
-                    Argyroderma
+                  <NavLink to={'/interior'} className="nav-link">
+                    Para el interior
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to={'/planta-piedra'} className="nav-link">
-                    Planta piedra
+                  <NavLink to={'/cactus'} className="nav-link">
+                    Cactus
                   </NavLink>
                 </li>
               </ul>

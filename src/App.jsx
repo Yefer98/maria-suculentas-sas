@@ -7,6 +7,7 @@ import ControlProveedores from "./components/ControlProveedores";
 import Exterior from "./components/Exterior";
 import Interior from "./components/Interior";
 import Cactus from "./components/Cactus";
+import InicioSesion from "./components/InicioSesion";
 
 const routes = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const routes = createBrowserRouter([
   {
     path: '/cactus',
     element: <Cactus />
+  },
+  {
+    path: '/sesion',
+    element: <InicioSesion />
   }
 ]);
 

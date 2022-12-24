@@ -28,11 +28,6 @@ const NavBar = () => {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to={'/registro'} className="nav-link">
-                Registro
-              </NavLink>
-            </li>
-            <li className="nav-item">
               <NavLink to={'/control'} className="nav-link">
                 Control proveedores
               </NavLink>
@@ -67,6 +62,18 @@ const NavBar = () => {
             </li>
           </ul>
         </div>
+        <ul className="navbar-nav me-auto mb-2 mb-lg-0 sesion">
+            <li className="nav-item">
+              <NavLink to={'/sesion'} className="nav-link">
+              <i class="fa-solid fa-right-to-bracket"></i> Iniciar sesión
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink to={'/registro'} className="nav-link">
+                Registrarse
+              </NavLink>
+            </li>
+          </ul>
       </div>
     </nav>
   );

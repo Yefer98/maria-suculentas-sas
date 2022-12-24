@@ -1,5 +1,5 @@
 import React from "react";
-import Echeverias from "../../assets/Echeveria_setosaCRH.jpg"
+import Echeverias from "../../assets/Echeveria.jpg"
 
 const Echeveria = () => {
   return (

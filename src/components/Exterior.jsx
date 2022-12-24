@@ -1,5 +1,6 @@
 import React from "react";
-import NavBar from "./NavBar";
+import Footer from "./Footer";
+import Header from "./Header";
 import Echeveria from "./PlantasExterior/Echeveria";
 import Faucaria from "./PlantasExterior/Faucaria";
 import Garraoso from "./PlantasExterior/Garraoso";
@@ -11,7 +12,8 @@ import Snegra from "./PlantasExterior/Snegra";
 const Exterior = () => {
   return (
     <>
-      <NavBar />
+      <Header />
+      <h1 className="plantExt">Plantas para exterior</h1>
       <section className="contenedor">
         <Snegra />
         <Faucaria />
@@ -21,6 +23,7 @@ const Exterior = () => {
         <Orejas />
 
       </section>
+      <Footer />
     </>
   );
 };

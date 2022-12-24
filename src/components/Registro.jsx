@@ -1,11 +1,13 @@
 import React from 'react'
-import NavBar from './NavBar'
+import Footer from './Footer'
+import Header from './Header'
 
 const Registro = () => {
   return (
     <>
-        <NavBar />
+        <Header />
         <div>Registro</div>
+        <Footer />
     </>
   )
 }

@@ -11,16 +11,55 @@ body{
     background: rgba(0, 0, 0, 0.279);
 }
 
-/* -------------> Inicio <------------- */
+/* -------------> Header <------------- */
 
-header h1{
+.chains{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.chains div{
+    background: url(./assets/chains.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 30px;
+    width: 10px;
+}
+
+.banner{
+    background: rgb(141, 173, 85);
+    height: 150px;
+    width: 80%;
+    margin: 0 auto 20px;
+    border-radius: 0 0 60% 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner img{
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    opacity: 85%;
+}
+
+.banner h1{
     font-size: 4em;
     text-align: center;
     text-transform: uppercase;
     color: darkolivegreen;
+    text-shadow: 3px 3px 3px black;
     -webkit-text-stroke: 1px white;
     font-weight: 800;
+    z-index: 2;
 }
+
+/* -------------> Inicio <------------- */
 
 .carousel-item{
     height: 400px;
@@ -36,11 +75,11 @@ header h1{
     background: rgba(0, 0, 0, 0.411);
 }
 
+/* -------------> NavBar <------------- */
+
 .dropdown-menu{
     background: #212529a1;
 }
-
-/* -------------> NavBar <------------- */
 
 .dropdown-item{
     color: white;

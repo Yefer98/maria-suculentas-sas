@@ -1,5 +1,5 @@
 import React from "react";
-import Sedumm from "../../assets/Sedum.jpg"
+import Sedumm from "../../assets/Sedum.jpg";
 
 const Sedum = () => {
   return (
@@ -7,9 +7,10 @@ const Sedum = () => {
       <h2>Sedum morganianum</h2>
       <img src={Sedumm} alt="Sedum morganianum" />
       <p>
-        En el sol, su color es casi negro, lo que provoca un bello contraste con
-        otras plantas en un jardín. Por otro lado, en la sombra parcial llega a
-        tomar un color púrpura con tonos verdes al centro.
+        Son plantas anuales o perennes, a veces rizomatosas, con hojas carnosas
+        generalmente enteras, planas o cilíndricas, alternas, aunque
+        ocasionalmente pueden ser opuestas, verticiladas o agrupadas en rosetas
+        basales, generalmente sésiles.
       </p>
       <input className="comprar" type="button" value="Comprar" />
     </div>

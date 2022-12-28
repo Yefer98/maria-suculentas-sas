@@ -74,6 +74,9 @@ body{
 .carousel-caption{
     background: rgba(0, 0, 0, 0.411);
 }
+.carousel-caption h5{
+    text-shadow: 2px 2px 0px black;
+}
 
 /* -------------> NavBar <------------- */
 
@@ -207,6 +210,11 @@ body{
     margin: 30px auto;
     background: rgba(85, 107, 47, 0.685);
 }
+.contenedor-main H2{
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 0px black;
+}
 
 .contenedor-main p{
     color: white;
@@ -255,4 +263,98 @@ body{
 
 .referencias{
     height: 100%;
+}
+.referencias a{
+    color: #212529;
+}
+
+/* Registration Form */
+.registro{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+
+}
+.container-form{
+    background-color: rgba(0, 0, 0, 0.622);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    padding: 15px;
+    
+}
+.container-form h2{
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 0px black;
+    margin-bottom: 37px;
+}
+.container-form form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+}
+.container-inp input{
+    padding: 7px;
+}
+
+.enviar{
+    padding: 10px;
+    margin: 20px;
+    width: 200px;
+    font-size: 15px;
+    transition: ease-in-out .5s;
+}
+.enviar:hover{
+    background: rgba(85, 107, 47, 0.685);
+    transition: ease-in-out .5s;
+    color: white;
+}
+/* customer login */
+.customer-login{
+    padding: 55px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.customer-login form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.customer-login-f{
+    padding: 30px;
+    background-color: #212529;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.customer-login input{
+    width: 300px;
+    padding: 5px;
+    margin: 7px;
+}
+.customer-login h2{
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 0px rgb(0, 0, 0);
+    margin-bottom: 27px;
+}
+.inicio{
+    padding: 10px;
+    margin: 20px;
+    width: 150px;
+    font-size: 15px;
+    transition: ease-in-out .5s;
+}
+.inicio:hover{
+    background: rgba(85, 107, 47, 0.685);
+    transition: ease-in-out .5s;
+    color: white;
 }

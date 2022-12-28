@@ -70,7 +70,7 @@ const NavBar = () => {
             </li>
             <li className="nav-item">
               <NavLink to={'/registro'} className="nav-link">
-                Registrarse
+              <i class="fa-solid fa-user"></i> Registrarse 
               </NavLink>
             </li>
           </ul>

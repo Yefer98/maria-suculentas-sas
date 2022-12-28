@@ -1,5 +1,5 @@
 import React from "react";
-import Orejasg from "../../assets/orejas-gato.jpg"
+import Orejasg from "../../assets/orejas-gato.jpg";
 
 const Orejas = () => {
   return (
@@ -7,9 +7,11 @@ const Orejas = () => {
       <h2>Suculenta Orejas de Gato</h2>
       <img src={Orejasg} alt="Suculenta Orejas de Gato" />
       <p>
-        En el sol, su color es casi negro, lo que provoca un bello contraste con
-        otras plantas en un jardín. Por otro lado, en la sombra parcial llega a
-        tomar un color púrpura con tonos verdes al centro.
+        Esta especie se suele cultivar como planta de interior por la
+        peculiaridad de su aspecto más que por sus pequeñas flores. Al igual que
+        el resto de las crasuláceas, requiere riegos moderados, una temperatura
+        invernal que no baje de los 5 °C, un sustrato bien drenado con adición
+        de turba o mantillo de hojas y una posición soleada o semisombreada.
       </p>
       <input className="comprar" type="button" value="Comprar" />
     </div>

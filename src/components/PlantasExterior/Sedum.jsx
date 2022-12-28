@@ -1,5 +1,5 @@
 import React from "react";
-import Sedumm from "../../assets/Sedum-morganianum-burrito.jpg"
+import Sedumm from "../../assets/Sedum.jpg"
 
 const Sedum = () => {
   return (

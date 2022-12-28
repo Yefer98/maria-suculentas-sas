@@ -1,22 +1,27 @@
 import React from 'react'
-import whatsapp from '../assets/Whatsapp-logo.png'
-import facebook from '../assets/facebook-logo.webp'
-import instagram from '../assets/Instagram-logo.webp'
-import twitter from '../assets/twitter-logo.png'
-import youtube from '../assets/Youtube-logo.png'
+import Socials from './Socials'
 
 const Footer = () => {
   return (
     <section className='footer'>
-      <div className='socials'>
-        <img src={whatsapp} alt="Whatsapp" title="Whatsapp" />
-        <img src={facebook} alt="Facebook" title="Facebook" />
-        <img src={instagram} alt="Instagram" title='Instagram'/>
-        <img src={twitter} alt="Twitter" title='Twitter' />
-        <img src={youtube} alt="Youtube" title='Youtube' />
+      <div className='footerrow'>
+      <div className='contacto'>
+        <h4>Contacto</h4><br />
+        <p><b>Correo:</b> mariasuculentassas@gmail.com</p>
+        <p><b>Telefono:</b> +57 321 045 3980</p><br />
+        <Socials />
       </div>
       <div className='referencias'>
-
+        <h3>Referencias</h3>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      </div>
+      <div className='copy'>
+        <p>&copy; 2022 Maria Suculentas S.A.S.</p>
       </div>
     </section>
   )

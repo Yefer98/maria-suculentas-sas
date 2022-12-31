@@ -1,6 +1,5 @@
 import React from "react";
 import Carousel from "./Carousel";
-import orejasGato from "../assets/orejas-gato.jpg";
 
 const Main = () => {
   return (

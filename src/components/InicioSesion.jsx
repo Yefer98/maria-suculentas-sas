@@ -1,15 +1,15 @@
 import React from 'react'
-import loging from "../assets/inicio-cliente.png"
 import Footer from './Footer'
 import Header from './Header'
+import loginUser from '../assets/inicio-cliente.png'
 
 const InicioSesion = () => {
   return (
     <>
         <Header />
         <section className='customer-login'>
-          <img width="660px" src={loging} alt="inicio de sesion" />
           <div className='customer-login-f'>
+            <img src={loginUser} alt="" />
             <h2>Inicio Sesión cliente</h2>
           <form action="">
             <input type="text" placeholder='Usuario' />

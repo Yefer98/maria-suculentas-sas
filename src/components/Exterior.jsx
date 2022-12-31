@@ -13,6 +13,7 @@ const Exterior = () => {
   return (
     <>
       <Header />
+    <main>
       <h1 className="plantExt">Plantas para exterior</h1>
       <section className="contenedor">
         <Snegra />
@@ -24,6 +25,7 @@ const Exterior = () => {
 
       </section>
       <Footer />
+    </main>
     </>
   );
 };

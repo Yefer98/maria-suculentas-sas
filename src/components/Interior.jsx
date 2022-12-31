@@ -12,6 +12,7 @@ const Interior = () => {
   return (
     <>
       <Header />
+      <main>
       <h1 className="plantExt">Plantas para interior</h1>
       <section className="contenedor">
         <Aloe />
@@ -22,6 +23,7 @@ const Interior = () => {
         <Piedras />
       </section>
       <Footer />
+      </main>
     </>
   );
 };

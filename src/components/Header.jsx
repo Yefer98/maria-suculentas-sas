@@ -7,13 +7,15 @@ const Header = () => {
   return (
     <header>
        <NavBar />
-       <div className='chains'>
-        <div></div>
-        <div></div>
-       </div>
        <div className='banner'>
-        <img src={madera} alt="" />
-        <h1>Maria Suculentas S.A.S.</h1>
+        <div className='chains'>
+          <div></div>
+          <div></div>
+        </div>
+        <div className='contBanner'>
+          <img src={madera} alt="" />
+          <h1>Maria Suculentas S.A.S.</h1>
+        </div>
        </div>
     </header>
   )

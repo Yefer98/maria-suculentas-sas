@@ -1,10 +1,10 @@
 import React from "react";
-import piedra from "../../assets/piedras.jpg";
+import graci from "../../assets/gracilis.jfif";
 
 const cardout = () => {
   const card = document.getElementById('card');
-  const parrafo11 = document.getElementById('parrafo11');
-  parrafo11.textContent = "En el sol, su color es casi negro, lo que provoca un bello contraste con otras plantas en un jardín. Por otro lado, en la sombra parcial llega a tomar un color púrpura con tonos verdes al centro.";
+  const parrafo15 = document.getElementById('parrafo15');
+  parrafo15.textContent = "En el sol, su color es casi negro, lo que provoca un bello contraste con otras plantas en un jardín. Por otro lado, en la sombra parcial llega a tomar un color púrpura con tonos verdes al centro.";
   const lista = document.getElementById('lista');
   const sex = document.getElementsById('sex');
   const ref = document.getElementsById('ref');
@@ -14,12 +14,12 @@ const cardout = () => {
   ref.textContent = "";
   size.textContent = "";
   amount.textContent = "";
-  card.append(parrafo11);
+  card.append(parrafo15);
 }
 
 const cardover = () => {
-  const parrafo11 = document.getElementById('parrafo11');
-  parrafo11.textContent = "";
+  const parrafo15 = document.getElementById('parrafo15');
+  parrafo15.textContent = "";
   const lista = document.createElement('ul');
   const sex = document.createElement('li');
   const ref = document.createElement('li');
@@ -29,24 +29,26 @@ const cardover = () => {
   ref.textContent = "Referencia: Planta para exterior";
   size.textContent = "Tamaño: Max 10 cm de diámetro";
   amount.textContent = "Cantidad: 100";
-  parrafo11.append(lista)
+  parrafo15.append(lista)
   lista.append(sex, ref, size, amount);
 }
 
-const Piedras = () => {
+const CGracilis = () => {
   return (
     <div className="card" onMouseOver={cardover} onMouseOut={cardout}>
-      <h2>Planta Lithops de Piedras Vivas</h2>
-      <img src={piedra} alt="Echeveria Setosa" />
-      <p className="parrafo" id="parrafo11">
-        Se denominan vulgarmente piedras vivas o planta piedra debido a que
-        presentan una apariencia que las hace prácticamente indistinguibles de
-        las piedras de su entorno; adaptación evolutiva (denominada cripsis) que
-        les permite camuflarse ante posibles depredadores.
+      <h2>Cactus Gracilis</h2>
+      <img src={graci} alt="gracilis" />
+      <p className="parrafo" id="parrafo15">
+        Se trata de una planta que crece por separado con tallos esféricos o
+        cilíndricos, y alcanza un diámetro de 30 cm y una altura de 150
+        centímetros. Tiene entre 16 y 24 costillas, con 7 a 13 espinas centrales
+        de color rojo, ligeramente curvadas en gancho y de color amarillo de
+        hasta 7 cm de largo. Los cuatro espinas principales están dispuestos en
+        pares opuestos.
       </p>
       <input className="comprar" type="button" value="Comprar" />
     </div>
   );
 };
 
-export default Piedras;
+export default CGracilis;

@@ -13,6 +13,11 @@ body{
 
 /* -------------> Header <------------- */
 
+.banner{
+    position: absolute;
+    width: 100%;
+}
+
 .chains{
     width: 80%;
     margin: 0 auto;
@@ -28,7 +33,7 @@ body{
     width: 10px;
 }
 
-.banner{
+.contBanner{
     background: rgb(141, 173, 85);
     height: 150px;
     width: 80%;
@@ -41,14 +46,14 @@ body{
     overflow: hidden;
 }
 
-.banner img{
+.contBanner img{
     position: absolute;
     width: 100%;
     z-index: 1;
     opacity: 85%;
 }
 
-.banner h1{
+.contBanner h1{
     font-size: 4em;
     text-align: center;
     text-transform: uppercase;
@@ -74,6 +79,7 @@ body{
 .carousel-caption{
     background: rgba(0, 0, 0, 0.411);
 }
+
 .carousel-caption h5{
     text-shadow: 2px 2px 0px black;
 }
@@ -140,6 +146,7 @@ body{
     width: 80vw;
     padding-top: 10px;
     margin: 20px auto;
+    padding-bottom: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -202,7 +209,26 @@ body{
     transition: ease-in-out .7s;
 }
 
+.card p, .parrafo{
+    font-size: 14px;
+    bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.389);
+}
+
+.parrafo{
+    width: 100%;
+}
+
+.parrafo ul{
+    width: 100%;
+    font-size: 17px;
+}
+
 /* -------------> Main <------------- */
+
+main{
+    padding-top: 210px;
+}
 
 .contenedor-main{
     padding: 20px;
@@ -210,6 +236,7 @@ body{
     margin: 30px auto;
     background: rgba(85, 107, 47, 0.685);
 }
+
 .contenedor-main H2{
     text-align: center;
     color: white;
@@ -228,7 +255,6 @@ body{
     height: 300px;
     padding-top: 30px;
     margin-bottom: 10px;
-    margin-top: 100px;
     gap: 40px;
     display: flex;
     flex-direction: column;
@@ -264,32 +290,47 @@ body{
 .referencias{
     height: 100%;
 }
+
 .referencias a{
     color: #212529;
 }
 
-/* Registration Form */
+/* -------------> Registration Form <------------- */
+
 .registro{
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-
+    height: 160vh;
+    background: url(./assets/wallpaper-inicioS.webp) no-repeat;
+    background-size: cover;
 }
+
+.registro img{
+    margin-left: 500px;
+    margin-top: 300px;
+    width: 400px;
+    height: 280px;
+}
+
 .container-form{
-    background-color: rgba(0, 0, 0, 0.622);
+    width: 438px;
+    margin-left: auto;
+    background-color: rgba(0, 0, 0, 0.788);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; 
     padding: 15px;
-    
 }
+
 .container-form h2{
     text-align: center;
     color: white;
     text-shadow: 2px 2px 0px black;
     margin-bottom: 37px;
 }
+
 .container-form form{
     display: flex;
     justify-content: center;
@@ -297,6 +338,7 @@ body{
     align-items: center;
     gap: 7px;
 }
+
 .container-inp input{
     padding: 7px;
 }
@@ -308,18 +350,24 @@ body{
     font-size: 15px;
     transition: ease-in-out .5s;
 }
+
 .enviar:hover{
     background: rgba(85, 107, 47, 0.685);
     transition: ease-in-out .5s;
     color: white;
 }
-/* customer login */
+
+/* -------------> Customer Login <------------- */
+
 .customer-login{
-    padding: 55px;
     display: flex;
     justify-content: space-evenly;
     width: 100%;
+    height: 150vh;
+    background: url(./assets/wallpaper-inicioS.webp) no-repeat;
+    background-size: cover;
 }
+
 .customer-login form{
     display: flex;
     flex-direction: column;
@@ -327,25 +375,36 @@ body{
     align-items: center;
     gap: 20px;
 }
+
 .customer-login-f{
     padding: 30px;
-    background-color: #212529;
+    background-color: rgba(0, 0, 0, 0.788);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: auto;
+    width: 438px;
 }
+
+.customer-login-f img{
+    width: 150px;
+    margin-bottom: 20px;
+}
+
 .customer-login input{
     width: 300px;
     padding: 5px;
     margin: 7px;
 }
+
 .customer-login h2{
     text-align: center;
     color: white;
     text-shadow: 2px 2px 0px rgb(0, 0, 0);
     margin-bottom: 27px;
 }
+
 .inicio{
     padding: 10px;
     margin: 20px;
@@ -353,10 +412,23 @@ body{
     font-size: 15px;
     transition: ease-in-out .5s;
 }
+
 .inicio:hover{
     background: rgba(85, 107, 47, 0.685);
     transition: ease-in-out .5s;
     color: white;
 }
 
-/* validation js */
+/* -------------> Validation js <------------- */
+
+.container-inp p{
+    color: white;
+}
+
+.correcto{
+    background-color: darkolivegreen;
+}
+
+.incorrecto{
+    background-color: rgb(92, 0, 0);
+}

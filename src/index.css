@@ -287,12 +287,30 @@ main{
     filter: contrast(2);
 }
 
-.referencias{
+.pagos{
     height: 100%;
 }
 
-.referencias a{
-    color: #212529;
+.pagos div{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagos img{
+    width: 400px;
+}
+
+.envios{
+    height: 100%;
+}
+
+.envios div{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* -------------> Registration Form <------------- */
@@ -321,7 +339,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center; 
-    padding: 15px;
+    padding: 30px;
 }
 
 .container-form h2{
@@ -340,23 +358,13 @@ main{
 }
 
 .container-inp input{
-    width: 300px;
+    width: 100%;
     padding: 5px;
-    margin: 7px;
+    outline: none;
 }
 
-.enviar{
-    padding: 9px;
-    margin: 20px;
-    width: 300px;
-    font-size: 15px;
-    transition: ease-in-out .5s;
-}
-
-.enviar:hover{
-    background: rgba(85, 107, 47, 0.685);
-    transition: ease-in-out .5s;
-    color: white;
+.container-inp input:focus{
+    background-color: rgba(85, 107, 47, 0.425);
 }
 
 /* -------------> Customer Login <------------- */
@@ -395,9 +403,13 @@ main{
 }
 
 .customer-login input{
-    width: 300px;
+    width: 100%;
     padding: 5px;
-    margin: 7px;
+    outline: none;
+}
+
+.customer-login input:focus{
+    background-color: rgba(85, 107, 47, 0.425);
 }
 
 .customer-login h2{
@@ -407,15 +419,14 @@ main{
     margin-bottom: 27px;
 }
 
-.inicio{
-    padding: 10px;
-    margin: 20px;
-    width: 150px;
+.inicioS, .enviar, .enviarPro{
+    padding: 5px;
+    width: 100%;
     font-size: 15px;
     transition: ease-in-out .5s;
 }
 
-.inicio:hover{
+.inicioS:hover, .enviar:hover, .enviarPro:hover{
     background: rgba(85, 107, 47, 0.685);
     transition: ease-in-out .5s;
     color: white;
@@ -435,7 +446,8 @@ main{
     background-color: rgb(92, 0, 0);
 }
 
-/* control proveedores */
+/* -------------> Control proveedores <------------- */
+
 .controlP{
     display: flex;
     justify-content: space-evenly;
@@ -447,7 +459,7 @@ main{
 }
 
 .container-formulario{
-    width: 450px;
+    width: 438px;
     margin-left: auto;
     background-color: rgba(0, 0, 0, 0.788);
     display: flex;
@@ -456,6 +468,14 @@ main{
     align-items: center; 
     padding: 15px;
 }
+
+.container-formulario form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .container-formulario h2{
     text-align: center;
     color: white;
@@ -463,26 +483,23 @@ main{
     margin-bottom: 37px;
 }
 
+.container-inp{
+    width: 100%;
+}
+
 .container-inp input{
-    width: 300px;
+    width: 100%;
     padding: 5px;
-    margin: 7px;
+    outline: none;
 }
+
 .container-inp textarea{
-    width: 300px;
+    width: 100%;
     padding: 5px;
-    margin: 7px;
-}
-.enviarPro{
-    padding: 10px;
-    width: 320px;
-    font-size: 15px;
-    transition: ease-in-out .5s;
+    outline: none;
+    resize: none;
 }
 
-.enviarPro:hover{
-    background: rgba(85, 107, 47, 0.685);
-    transition: ease-in-out .5s;
-    color: white;
+.container-inp textarea:focus{
+    background-color: rgba(85, 107, 47, 0.425);
 }
-

@@ -6,12 +6,8 @@ const ControlProveedores = () => {
   return (
     <>
       <Header />
-      <div>ControlProveedores</div>
-      <p>
-        e. De los proveedores es necesario almacenar el nombre, nit, dirección,
-        teléfono, correo, nombre del producto que compra, y una descripción de
-        la empresa y del producto
-      </p>
+      <h1>proveedores</h1>
+
       <Footer />
     </>
   );

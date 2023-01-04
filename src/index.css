@@ -432,3 +432,16 @@ main{
 .incorrecto{
     background-color: rgb(92, 0, 0);
 }
+
+/* control proveedores */
+
+.container-formulario{
+    width: 438px;
+    margin-left: auto;
+    background-color: rgba(0, 0, 0, 0.788);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    padding: 15px;
+}

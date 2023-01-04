@@ -436,9 +436,18 @@ main{
 }
 
 /* control proveedores */
+.controlP{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 170vh;
+    background: url(./assets/empresarial.png) no-repeat;
+    background-size: cover;
+    background-position:right;
+}
 
 .container-formulario{
-    width: 438px;
+    width: 450px;
     margin-left: auto;
     background-color: rgba(0, 0, 0, 0.788);
     display: flex;
@@ -446,4 +455,33 @@ main{
     justify-content: center;
     align-items: center; 
     padding: 15px;
+}
+.container-formulario h2{
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 0px black;
+    margin-bottom: 37px;
+}
+
+.container-inp input{
+    width: 300px;
+    padding: 5px;
+    margin: 7px;
+}
+.container-inp textarea{
+    width: 300px;
+    padding: 5px;
+    margin: 7px;
+}
+.enviarPro{
+    padding: 10px;
+    width: 320px;
+    font-size: 15px;
+    transition: ease-in-out .5s;
+}
+
+.enviarPro:hover{
+    background: rgba(85, 107, 47, 0.685);
+    transition: ease-in-out .5s;
+    color: white;
 }

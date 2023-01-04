@@ -421,7 +421,7 @@ main{
     color: white;
 }
 
-/* -------------> Validation js <------------- */
+/* -------------> Validation clients and suppliers js <------------- */
 
 .container-inp p{
     color: white;
@@ -485,3 +485,4 @@ main{
     transition: ease-in-out .5s;
     color: white;
 }
+

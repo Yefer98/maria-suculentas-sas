@@ -149,7 +149,7 @@ const validacionForm = (e) => {
       }
       break;
     case "documento":
-      if (numero.test(e.target.value)) {
+      if (decimal.test(e.target.value)) {
         documento.classList.remove("incorrecto");
         documento.classList.add("correcto");
         pdocumento.textContent = "";

@@ -14,7 +14,7 @@ const InicioSesion = () => {
           <form action="">
             <input type="text" placeholder='Usuario' />
             <input type="password" placeholder='Contraseña'/>
-            <input className='inicio' type="submit" value="Iniciar sesión" />
+            <input className='inicioS' type="submit" value="Iniciar sesión" />
           </form>
           </div>
         </section>

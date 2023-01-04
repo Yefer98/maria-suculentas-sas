@@ -1,5 +1,6 @@
 import React from "react";
 import Carousel from "./Carousel";
+import Galeria from "./Galeria";
 
 const Main = () => {
   return (
@@ -32,6 +33,7 @@ const Main = () => {
           entérate de todos nuestros Tips con Marías Suculentas S.A.S
         </p>
       </section>
+      <Galeria />
     </main>
   );
 };

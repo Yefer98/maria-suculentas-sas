@@ -1,7 +1,8 @@
 import React from 'react'
-import roseta from '../assets/roseta.webp'
-import argyroderma from '../assets/argyroderma.jpg'
+import Snegra from '../assets/carousel-suculenta-negra.jpg'
+import bolaRosada from '../assets/carousel-bola-rosada.jpg'
 import plantaPiedra from '../assets/plantasPiedra.jpg'
+import { Link } from 'react-router-dom'
 
 const Carousel = () => {
   return (
@@ -33,25 +34,35 @@ const Carousel = () => {
           ></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src={roseta} class="d-block w-100" alt="roseta"/>
+          <div class="carousel-item active" title='ir a Plantas exterior'>
+            <Link to={'/exterior'}>
+            <img src={Snegra} class="d-block w-100" alt="roseta"/>
             <div class="carousel-caption d-none d-md-block">
-              <h5>Roseta</h5>
+              <h5>Suculenta negra</h5>
               <p>
-                Es una planta suculenta de hojas perenne en forma de roseta con tallo corto, sus hojas son carnosas y alargadas, curvadas hacia abajo y enrodilladas hacia el centro, recubierta por una cera y son de color azulado grisáseo.
+              Esta planta en el sol, su color es casi negro, lo que provoca un bello
+              contraste con otras plantas en un jardín. Por otro lado, en la sombra
+              parcial llega a tomar un color púrpura con tonos verdes al centro.
               </p>
             </div>
+            </Link>
           </div>
-          <div class="carousel-item">
-            <img src={argyroderma} class="d-block w-100" alt="argyroderma" />
+          <div class="carousel-item" title='ir a Cactus'>
+            <Link to={'/cactus'}>
+            <img src={bolaRosada} class="d-block w-100" alt="argyroderma"/>
             <div class="carousel-caption d-none d-md-block">
-              <h5>Argyroderma</h5>
+              <h5>Cactus Bola Rosa</h5>
               <p>
-                El habitat natural de origen de esta planta es sudafricana, estas permanecen solitarias o se agrupan lentamente y forman racimos de pequeños "huevos", en los extremos de los tallos cortos y postrados.
+              Es una especie fanerógama perteneciente a la familia de las cactáceas,
+              endémica de Paraguay y en Argentina, en las provincias de Formosa, Chaco
+              y parte de Santiago del Estero, que actualmente se ha extendido por
+              todo el mundo.
               </p>
             </div>
+            </Link>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" title='ir a Plantas interior'>
+            <Link to={'/interior'}>
             <img src={plantaPiedra} class="d-block w-100" alt="planta piedra" />
             <div class="carousel-caption d-none d-md-block">
               <h5>Planta piedra</h5>
@@ -59,6 +70,7 @@ const Carousel = () => {
                 Este tipo de cactus es fascinante porque aunque parece una roca verde y no tiene hojas, le dará un aspecto muy diferente a tu colección de plantas.
               </p>
             </div>
+            </Link>
           </div>
         </div>
         <button

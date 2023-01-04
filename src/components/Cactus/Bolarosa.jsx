@@ -4,7 +4,7 @@ import bolar from "../../assets/bola-rosada.jpg";
 const cardout = () => {
   const card = document.getElementById('card');
   const parrafo14 = document.getElementById('parrafo14');
-  parrafo14.textContent = "En el sol, su color es casi negro, lo que provoca un bello contraste con otras plantas en un jardín. Por otro lado, en la sombra parcial llega a tomar un color púrpura con tonos verdes al centro.";
+  parrafo14.textContent = "Es una especie fanerógama perteneciente a la familia de las cactáceas, endémica de Paraguay y en Argentina, en las provincias de Formosa, Chaco y parte de Santiago del Estero, que actualmente se ha extendido por todo el mundo.";
   const lista = document.getElementById('lista');
   const sex = document.getElementsById('sex');
   const ref = document.getElementsById('ref');
@@ -25,9 +25,9 @@ const cardover = () => {
   const ref = document.createElement('li');
   const size = document.createElement('li');
   const amount = document.createElement('li');
-  sex.textContent = "Sexo: Hembra";
-  ref.textContent = "Referencia: Planta para exterior";
-  size.textContent = "Tamaño: Max 10 cm de diámetro";
+  sex.textContent = "Sexo: Macho";
+  ref.textContent = "Referencia: Cactus";
+  size.textContent = "Tamaño: Max 15 centímetros de altura";
   amount.textContent = "Cantidad: 100";
   parrafo14.append(lista)
   lista.append(sex, ref, size, amount);
@@ -39,7 +39,7 @@ const Bolarosa = () => {
       <h2>Cactus Bola Rosada</h2>
       <img src={bolar} alt="Bola rosada" />
       <p className="parrafo" id="parrafo14">
-        es una especie fanerógama perteneciente a la familia de las cactáceas,
+        Es una especie fanerógama perteneciente a la familia de las cactáceas,
         endémica de Paraguay y en Argentina, en las provincias de Formosa, Chaco
         y parte de Santiago del Estero, que actualmente se ha extendido por
         todo el mundo.

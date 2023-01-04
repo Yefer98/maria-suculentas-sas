@@ -4,7 +4,7 @@ import ovatar from "../../assets/ovata.jpg";
 const cardout = () => {
   const card = document.getElementById('card');
   const parrafo10 = document.getElementById('parrafo10');
-  parrafo10.textContent = "En el sol, su color es casi negro, lo que provoca un bello contraste con otras plantas en un jardín. Por otro lado, en la sombra parcial llega a tomar un color púrpura con tonos verdes al centro.";
+  parrafo10.textContent = "C. ovata es una planta perenne, con ramas gruesas y hojas carnosas de 3 a 7 cm, que crecen en pares opuestos a lo largo del tallo. Es originaria de África del sur, crece en los laterales de las montañas en lugares rocosos y calurosos con lluvias invernales.";
   const lista = document.getElementById('lista');
   const sex = document.getElementsById('sex');
   const ref = document.getElementsById('ref');
@@ -26,9 +26,9 @@ const cardover = () => {
   const size = document.createElement('li');
   const amount = document.createElement('li');
   sex.textContent = "Sexo: Hembra";
-  ref.textContent = "Referencia: Planta para exterior";
-  size.textContent = "Tamaño: Max 10 cm de diámetro";
-  amount.textContent = "Cantidad: 100";
+  ref.textContent = "Referencia: Planta para interior";
+  size.textContent = "Tamaño: 1-1,5 m de altura";
+  amount.textContent = "Cantidad: 35";
   parrafo10.append(lista)
   lista.append(sex, ref, size, amount);
 }

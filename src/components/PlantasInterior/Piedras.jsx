@@ -4,7 +4,7 @@ import piedra from "../../assets/piedras.jpg";
 const cardout = () => {
   const card = document.getElementById('card');
   const parrafo11 = document.getElementById('parrafo11');
-  parrafo11.textContent = "En el sol, su color es casi negro, lo que provoca un bello contraste con otras plantas en un jardín. Por otro lado, en la sombra parcial llega a tomar un color púrpura con tonos verdes al centro.";
+  parrafo11.textContent = "Se denominan vulgarmente piedras vivas o planta piedra debido a que presentan una apariencia que las hace prácticamente indistinguibles de las piedras de su entorno; adaptación evolutiva (denominada cripsis) que les permite camuflarse ante posibles depredadores.";
   const lista = document.getElementById('lista');
   const sex = document.getElementsById('sex');
   const ref = document.getElementsById('ref');
@@ -25,10 +25,10 @@ const cardover = () => {
   const ref = document.createElement('li');
   const size = document.createElement('li');
   const amount = document.createElement('li');
-  sex.textContent = "Sexo: Hembra";
-  ref.textContent = "Referencia: Planta para exterior";
-  size.textContent = "Tamaño: Max 10 cm de diámetro";
-  amount.textContent = "Cantidad: 100";
+  sex.textContent = "Sexo: Macho";
+  ref.textContent = "Referencia: Planta para interior";
+  size.textContent = "Tamaño: Diámetro: 0.6-0.8 pulgadas, altura: 1-1.5 pulgadas";
+  amount.textContent = "Cantidad: 55";
   parrafo11.append(lista)
   lista.append(sex, ref, size, amount);
 }

@@ -4,7 +4,7 @@ import bolaor from "../../assets/bola-oro.webp";
 const cardout = () => {
   const card = document.getElementById('card');
   const parrafo13 = document.getElementById('parrafo13');
-  parrafo13.textContent = "En el sol, su color es casi negro, lo que provoca un bello contraste con otras plantas en un jardín. Por otro lado, en la sombra parcial llega a tomar un color púrpura con tonos verdes al centro.";
+  parrafo13.textContent = "Echinocactus grusonii, llamado comúnmente asiento de suegra, bola de oro, barril de oro, o cactus erizo, es una especie perteneciente a la familia Cactaceae. El pequeño género al que pertenece, Echinocactus, junto con su género pariente Ferocactus, son vulgarmente conocidos como cactus barril.";
   const lista = document.getElementById('lista');
   const sex = document.getElementsById('sex');
   const ref = document.getElementsById('ref');
@@ -26,9 +26,9 @@ const cardover = () => {
   const size = document.createElement('li');
   const amount = document.createElement('li');
   sex.textContent = "Sexo: Hembra";
-  ref.textContent = "Referencia: Planta para exterior";
-  size.textContent = "Tamaño: Max 10 cm de diámetro";
-  amount.textContent = "Cantidad: 100";
+  ref.textContent = "Referencia: Cactus";
+  size.textContent = "Tamaño: Altura: 25 cm";
+  amount.textContent = "Cantidad: 65";
   parrafo13.append(lista)
   lista.append(sex, ref, size, amount);
 }

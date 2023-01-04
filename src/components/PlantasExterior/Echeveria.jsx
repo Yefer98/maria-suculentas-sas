@@ -4,7 +4,7 @@ import Echeverias from "../../assets/Echeveria.jpg";
 const cardout = () => {
   const card = document.getElementById('card');
   const parrafo = document.getElementById('parrafo');
-  parrafo.textContent = "En el sol, su color es casi negro, lo que provoca un bello contraste con otras plantas en un jardín. Por otro lado, en la sombra parcial llega a tomar un color púrpura con tonos verdes al centro.";
+  parrafo.textContent = "Surge de una roseta suculenta casi sin tallo con 7 - 15 cm de altura según la variedad y de la que surgen de 4 a 6 inflorescencias ramosas que alcanzan los 20 cm de altura. Flores rojas y amarillas en la primavera y principios de verano.";
   const lista = document.getElementById('lista');
   const sex = document.getElementsById('sex');
   const ref = document.getElementsById('ref');
@@ -27,7 +27,7 @@ const cardover = () => {
   const amount = document.createElement('li');
   sex.textContent = "Sexo: Hembra";
   ref.textContent = "Referencia: Planta para exterior";
-  size.textContent = "Tamaño: Max 10 cm de diámetro";
+  size.textContent = "Tamaño: 7 - 15 cm de altura";
   amount.textContent = "Cantidad: 100";
   parrafo.append(lista)
   lista.append(sex, ref, size, amount);

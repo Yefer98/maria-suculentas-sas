@@ -4,7 +4,7 @@ import Sedumm from "../../assets/Sedum.jpg";
 const cardout = () => {
   const card = document.getElementById('card');
   const parrafo = document.getElementById('parrafo4');
-  parrafo4.textContent = "En el sol, su color es casi negro, lo que provoca un bello contraste con otras plantas en un jardín. Por otro lado, en la sombra parcial llega a tomar un color púrpura con tonos verdes al centro.";
+  parrafo4.textContent = "Son plantas anuales o perennes, a veces rizomatosas, con hojas carnosas generalmente enteras, planas o cilíndricas, alternas, aunque ocasionalmente pueden ser opuestas, verticiladas o agrupadas en rosetas basales, generalmente sésiles.";
   const lista = document.getElementById('lista');
   const sex = document.getElementsById('sex');
   const ref = document.getElementsById('ref');
@@ -27,8 +27,8 @@ const cardover = () => {
   const amount = document.createElement('li');
   sex.textContent = "Sexo: Hembra";
   ref.textContent = "Referencia: Planta para exterior";
-  size.textContent = "Tamaño: Max 10 cm de diámetro";
-  amount.textContent = "Cantidad: 100";
+  size.textContent = "Tamaño: 30 cm de longitud";
+  amount.textContent = "Cantidad: 20";
   parrafo4.append(lista)
   lista.append(sex, ref, size, amount);
 }

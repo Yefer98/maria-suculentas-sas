@@ -91,7 +91,7 @@ const Registro = () => {
               class="enviar"
               id="enviar"
               type="submit"
-              value="Enviar"
+              value="Registrarme"
             />
           </form>
         </div>

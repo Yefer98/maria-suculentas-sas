@@ -4,7 +4,7 @@ import camandulas from "../../assets/camandula.jpg";
 const cardout = () => {
   const card = document.getElementById('card');
   const parrafo8 = document.getElementById('parrafo8');
-  parrafo8.textContent = "En el sol, su color es casi negro, lo que provoca un bello contraste con otras plantas en un jardín. Por otro lado, en la sombra parcial llega a tomar un color púrpura con tonos verdes al centro.";
+  parrafo8.textContent = "Nativa del sudoeste de África, esta crasa perenne forma tapices rastreros que enraízan en los nudos. Las hojas son esféricas y miden 6 mm de diámetro. Las flores blancas y como margaritas, de 12 mm de diámetro, brotan sobre pedúnculos de 35 mm en verano. Esta planta secultiva extensamente en cestas colgantes, con tallos péndulos de hojas grises que parecen cuentas.";
   const lista = document.getElementById('lista');
   const sex = document.getElementsById('sex');
   const ref = document.getElementsById('ref');
@@ -26,9 +26,9 @@ const cardover = () => {
   const size = document.createElement('li');
   const amount = document.createElement('li');
   sex.textContent = "Sexo: Hembra";
-  ref.textContent = "Referencia: Planta para exterior";
-  size.textContent = "Tamaño: Max 10 cm de diámetro";
-  amount.textContent = "Cantidad: 100";
+  ref.textContent = "Referencia: Planta para interior";
+  size.textContent = "Tamaño: 6 mm de diámetro";
+  amount.textContent = "Cantidad: 60";
   parrafo8.append(lista)
   lista.append(sex, ref, size, amount);
 }

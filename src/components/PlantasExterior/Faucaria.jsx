@@ -4,7 +4,7 @@ import Faucari from "../../assets/Faucaria-tigrina.jpg";
 const cardout = () => {
   const card = document.getElementById('card');
   const parrafo1 = document.getElementById('parrafo1');
-  parrafo1.textContent = "En el sol, su color es casi negro, lo que provoca un bello contraste con otras plantas en un jardín. Por otro lado, en la sombra parcial llega a tomar un color púrpura con tonos verdes al centro.";
+  parrafo1.textContent = "Las faucarias amarillas o amarillo doradas, nacen solitarias o en parejas, son sésiles de unos 3 a 5 cm de diámetro y surgen del centro de cada roseta. La floración se da en otoño, en ejemplares de dos años o incluso más jóvenes.";
   const lista = document.getElementById('lista');
   const sex = document.getElementsById('sex');
   const ref = document.getElementsById('ref');
@@ -25,10 +25,10 @@ const cardover = () => {
   const ref = document.createElement('li');
   const size = document.createElement('li');
   const amount = document.createElement('li');
-  sex.textContent = "Sexo: Hembra";
+  sex.textContent = "Sexo: Macho";
   ref.textContent = "Referencia: Planta para exterior";
-  size.textContent = "Tamaño: Max 10 cm de diámetro";
-  amount.textContent = "Cantidad: 100";
+  size.textContent = "Tamaño: 8 cm de altura";
+  amount.textContent = "Cantidad: 50";
   parrafo1.append(lista)
   lista.append(sex, ref, size, amount);
   console.log("Stats")

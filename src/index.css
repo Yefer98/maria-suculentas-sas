@@ -340,13 +340,15 @@ main{
 }
 
 .container-inp input{
-    padding: 7px;
+    width: 300px;
+    padding: 5px;
+    margin: 7px;
 }
 
 .enviar{
-    padding: 10px;
+    padding: 9px;
     margin: 20px;
-    width: 200px;
+    width: 300px;
     font-size: 15px;
     transition: ease-in-out .5s;
 }

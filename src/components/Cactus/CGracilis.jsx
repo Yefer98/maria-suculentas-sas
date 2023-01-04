@@ -4,7 +4,7 @@ import graci from "../../assets/gracilis.jfif";
 const cardout = () => {
   const card = document.getElementById('card');
   const parrafo15 = document.getElementById('parrafo15');
-  parrafo15.textContent = "En el sol, su color es casi negro, lo que provoca un bello contraste con otras plantas en un jardín. Por otro lado, en la sombra parcial llega a tomar un color púrpura con tonos verdes al centro.";
+  parrafo15.textContent = "Se trata de una planta que crece por separado con tallos esféricos o cilíndricos, y alcanza un diámetro de 30 cm y una altura de 150 centímetros. Tiene entre 16 y 24 costillas, con 7 a 13 espinas centrales de color rojo, ligeramente curvadas en gancho y de color amarillo de hasta 7 cm de largo. Los cuatro espinas principales están dispuestos en pares opuestos.";
   const lista = document.getElementById('lista');
   const sex = document.getElementsById('sex');
   const ref = document.getElementsById('ref');
@@ -26,9 +26,9 @@ const cardover = () => {
   const size = document.createElement('li');
   const amount = document.createElement('li');
   sex.textContent = "Sexo: Hembra";
-  ref.textContent = "Referencia: Planta para exterior";
-  size.textContent = "Tamaño: Max 10 cm de diámetro";
-  amount.textContent = "Cantidad: 100";
+  ref.textContent = "Referencia: Cactus";
+  size.textContent = "Tamaño: Diámetro de 30 cm y una altura de 150 centímetros";
+  amount.textContent = "Cantidad: 75";
   parrafo15.append(lista)
   lista.append(sex, ref, size, amount);
 }

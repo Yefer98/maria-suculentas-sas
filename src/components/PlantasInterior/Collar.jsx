@@ -4,7 +4,7 @@ import collares from "../../assets/collar.jfif";
 const cardout = () => {
   const card = document.getElementById('card');
   const parrafo9 = document.getElementById('parrafo9');
-  parrafo9.textContent = "En el sol, su color es casi negro, lo que provoca un bello contraste con otras plantas en un jardín. Por otro lado, en la sombra parcial llega a tomar un color púrpura con tonos verdes al centro.";
+  parrafo9.textContent = "Ceropegia woodii Schltr. es una especie de planta de la familia Apocynaceae. Llamada comúnmente collar de corazones es una planta colgante con hojas en forma de corazón de color verde oscuro con manchas de apariencia marmórea.";
   const lista = document.getElementById('lista');
   const sex = document.getElementsById('sex');
   const ref = document.getElementsById('ref');
@@ -26,9 +26,9 @@ const cardover = () => {
   const size = document.createElement('li');
   const amount = document.createElement('li');
   sex.textContent = "Sexo: Hembra";
-  ref.textContent = "Referencia: Planta para exterior";
-  size.textContent = "Tamaño: Max 10 cm de diámetro";
-  amount.textContent = "Cantidad: 100";
+  ref.textContent = "Referencia: Planta para interior";
+  size.textContent = "Tamaño: 2-5 cm de altura y 2-4 m de longitud";
+  amount.textContent = "Cantidad: 15";
   parrafo9.append(lista)
   lista.append(sex, ref, size, amount);
 }

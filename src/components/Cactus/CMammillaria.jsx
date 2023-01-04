@@ -4,7 +4,7 @@ import mammi from "../../assets/mammillaria.jpg";
 const cardout = () => {
   const card = document.getElementById('card');
   const parrafo16 = document.getElementById('parrafo16');
-  parrafo16.textContent = "En el sol, su color es casi negro, lo que provoca un bello contraste con otras plantas en un jardín. Por otro lado, en la sombra parcial llega a tomar un color púrpura con tonos verdes al centro.";
+  parrafo16.textContent = "Es una especie de pequeño tamaño, como máximo 13 cm de altura. Los tallos (hasta unos 4 cm de diámetro), de color verde azulado, son algo globosos o cilíndricos, profusamente ramificados.";
   const lista = document.getElementById('lista');
   const sex = document.getElementsById('sex');
   const ref = document.getElementsById('ref');
@@ -25,10 +25,10 @@ const cardover = () => {
   const ref = document.createElement('li');
   const size = document.createElement('li');
   const amount = document.createElement('li');
-  sex.textContent = "Sexo: Hembra";
-  ref.textContent = "Referencia: Planta para exterior";
-  size.textContent = "Tamaño: Max 10 cm de diámetro";
-  amount.textContent = "Cantidad: 100";
+  sex.textContent = "Sexo: Macho";
+  ref.textContent = "Referencia: Cactus";
+  size.textContent = "Tamaño: 20 cm de diámetro y 40 cm de altura";
+  amount.textContent = "Cantidad: 75";
   parrafo16.append(lista)
   lista.append(sex, ref, size, amount);
 }

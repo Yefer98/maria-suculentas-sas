@@ -2,36 +2,18 @@ import React from "react";
 import Garra from "../../assets/garra-oso.jpg";
 
 const cardout = () => {
-  const card = document.getElementById('card');
-  const parrafo = document.getElementById('parrafo2');
-  parrafo2.textContent = "Cotyledon ó (Garra de Oso) Esta gran diferencia se debe a que varias especies originalmente descritas como Cotyledon después se agruparon en otros taxones, principalmente en los géneros americanos Echeveria y Dudleya.";
-  const lista = document.getElementById('lista');
-  const sex = document.getElementsById('sex');
-  const ref = document.getElementsById('ref');
-  const size = document.getElementsById('size');
-  const amount = document.getElementsById('amount');
-  sex.textContent = "";
-  ref.textContent = "";
-  size.textContent = "";
-  amount.textContent = "";
-  card.append(parrafo2);
-}
+  const stats2 = document.querySelector("#stats2");
+  const parrafo2 = document.querySelector("#parrafo2");
+  stats2.style.opacity = "0";
+  parrafo2.style.opacity = "2";
+};
 
 const cardover = () => {
-  const parrafo2 = document.getElementById('parrafo2');
-  parrafo2.textContent = "";
-  const lista = document.createElement('ul');
-  const sex = document.createElement('li');
-  const ref = document.createElement('li');
-  const size = document.createElement('li');
-  const amount = document.createElement('li');
-  sex.textContent = "Sexo: Hembra";
-  ref.textContent = "Referencia: Planta para exterior";
-  size.textContent = "Tamaño: 30-70 cm de alto y 30-50 cm de ancho";
-  amount.textContent = "Cantidad: 30";
-  parrafo2.append(lista)
-  lista.append(sex, ref, size, amount);
-}
+  const stats2 = document.querySelector("#stats2");
+  const parrafo2 = document.querySelector("#parrafo2");
+  stats2.style.opacity = "2";
+  parrafo2.style.opacity = "0";
+};
 
 const Garraoso = () => {
   return (
@@ -44,6 +26,14 @@ const Garraoso = () => {
         otros taxones, principalmente en los géneros americanos Echeveria y
         Dudleya.
       </p>
+      <div className="stats" id="stats2">
+        <ul>
+          <li>Sexo: Hembra</li>
+          <li>Referencia: Planta para exterior</li>
+          <li>Tamaño: 30-70 cm de alto y 30-50 cm de ancho</li>
+          <li>Cantidad: 30</li>
+        </ul>
+      </div>
       <input className="comprar" type="button" value="Comprar" />
     </div>
   );

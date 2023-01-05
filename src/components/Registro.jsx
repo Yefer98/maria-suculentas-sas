@@ -8,9 +8,8 @@ const Registro = () => {
     <>
       <Header />
       <section className="registro">
-        <img src={usuarios} alt="usuario" />
-
         <div class="container-form">
+          <img src={usuarios} alt="usuarios" />
           <h2>Registro Cliente</h2>
           <form name="form" id="form" action="">
             <div class="container-inp">
@@ -122,7 +121,8 @@ let textoCorto = /^[a-zA-ZÀ-ÿ\s]{1,50}$/;
 let textoNum = /^[a-zA-Z0-9#-\s]{1,30}$/;
 let numero = /^[\d+]{1,50}$/;
 let decimal = /^[.\d+]{1,50}$/;
-let email = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g;
+let email =
+  /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g;
 
 const validacionForm = (e) => {
   switch (e.target.name) {
@@ -212,5 +212,3 @@ inputs.forEach((input) => {
 });
 
 export default Registro;
-
-

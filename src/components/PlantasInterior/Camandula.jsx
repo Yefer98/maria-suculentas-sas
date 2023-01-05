@@ -2,36 +2,22 @@ import React from "react";
 import camandulas from "../../assets/camandula.jpg";
 
 const cardout = () => {
-  const card = document.getElementById('card');
-  const parrafo8 = document.getElementById('parrafo8');
-  parrafo8.textContent = "Nativa del sudoeste de África, esta crasa perenne forma tapices rastreros que enraízan en los nudos. Las hojas son esféricas y miden 6 mm de diámetro. Las flores blancas y como margaritas, de 12 mm de diámetro, brotan sobre pedúnculos de 35 mm en verano. Esta planta secultiva extensamente en cestas colgantes, con tallos péndulos de hojas grises que parecen cuentas.";
-  const lista = document.getElementById('lista');
-  const sex = document.getElementsById('sex');
-  const ref = document.getElementsById('ref');
-  const size = document.getElementsById('size');
-  const amount = document.getElementsById('amount');
-  sex.textContent = "";
-  ref.textContent = "";
-  size.textContent = "";
-  amount.textContent = "";
-  card.append(parrafo8);
-}
+  const stats8 = document.querySelector("#stats8");
+  const parrafo8 = document.querySelector("#parrafo8");
+  stats8.style.opacity = "0";
+  parrafo8.style.opacity = "1";
+  stats8.style.transition = "1s";
+  parrafo8.style.transition = "1s";
+};
 
 const cardover = () => {
-  const parrafo8 = document.getElementById('parrafo8');
-  parrafo8.textContent = "";
-  const lista = document.createElement('ul');
-  const sex = document.createElement('li');
-  const ref = document.createElement('li');
-  const size = document.createElement('li');
-  const amount = document.createElement('li');
-  sex.textContent = "Sexo: Hembra";
-  ref.textContent = "Referencia: Planta para interior";
-  size.textContent = "Tamaño: 6 mm de diámetro";
-  amount.textContent = "Cantidad: 60";
-  parrafo8.append(lista)
-  lista.append(sex, ref, size, amount);
-}
+  const stats8 = document.querySelector("#stats8");
+  const parrafo8 = document.querySelector("#parrafo8");
+  stats8.style.opacity = "1";
+  parrafo8.style.opacity = "0";
+  stats8.style.transition = "1s";
+  parrafo8.style.transition = "1s";
+};
 
 const Camandula = () => {
   return (
@@ -46,6 +32,14 @@ const Camandula = () => {
         cultiva extensamente en cestas colgantes, con tallos péndulos de hojas
         grises que parecen cuentas.
       </p>
+      <div className="stats" id="stats8">
+        <ul>
+          <li>Sexo: Hembra</li>
+          <li>Referencia: Planta para interior</li>
+          <li>Tamaño: 6 mm de diámetro</li>
+          <li>Cantidad: 60</li>
+        </ul>
+      </div>
       <input className="comprar" type="button" value="Comprar" />
     </div>
   );

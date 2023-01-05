@@ -2,36 +2,18 @@ import React from "react";
 import mammi from "../../assets/mammillaria.jpg";
 
 const cardout = () => {
-  const card = document.getElementById('card');
-  const parrafo16 = document.getElementById('parrafo16');
-  parrafo16.textContent = "Es una especie de pequeño tamaño, como máximo 13 cm de altura. Los tallos (hasta unos 4 cm de diámetro), de color verde azulado, son algo globosos o cilíndricos, profusamente ramificados.";
-  const lista = document.getElementById('lista');
-  const sex = document.getElementsById('sex');
-  const ref = document.getElementsById('ref');
-  const size = document.getElementsById('size');
-  const amount = document.getElementsById('amount');
-  sex.textContent = "";
-  ref.textContent = "";
-  size.textContent = "";
-  amount.textContent = "";
-  card.append(parrafo16);
-}
+  const stats16 = document.querySelector("#stats16");
+  const parrafo16 = document.querySelector("#parrafo16");
+  stats16.style.opacity = "0";
+  parrafo16.style.opacity = "1";
+};
 
 const cardover = () => {
-  const parrafo16 = document.getElementById('parrafo16');
-  parrafo16.textContent = "";
-  const lista = document.createElement('ul');
-  const sex = document.createElement('li');
-  const ref = document.createElement('li');
-  const size = document.createElement('li');
-  const amount = document.createElement('li');
-  sex.textContent = "Sexo: Macho";
-  ref.textContent = "Referencia: Cactus";
-  size.textContent = "Tamaño: 20 cm de diámetro y 40 cm de altura";
-  amount.textContent = "Cantidad: 75";
-  parrafo16.append(lista)
-  lista.append(sex, ref, size, amount);
-}
+  const stats16 = document.querySelector("#stats16");
+  const parrafo16 = document.querySelector("#parrafo16");
+  stats16.style.opacity = "1";
+  parrafo16.style.opacity = "0";
+};
 
 const CMammillaria = () => {
   return (
@@ -43,6 +25,14 @@ const CMammillaria = () => {
         tallos (hasta unos 4 cm de diámetro), de color verde azulado, son algo
         globosos o cilíndricos, profusamente ramificados.
       </p>
+      <div className="stats" id="stats16">
+        <ul>
+          <li>Sexo: Macho</li>
+          <li>Referencia: Cactus</li>
+          <li>Tamaño: 20 cm de diámetro y 40 cm de altura</li>
+          <li>Cantidad: 75</li>
+        </ul>
+      </div>
       <input className="comprar" type="button" value="Comprar" />
     </div>
   );

@@ -23,12 +23,12 @@ const NavBar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <NavLink to={'/'} className="nav-link" aria-current="page">
+              <NavLink to={"/"} className="nav-link" aria-current="page">
                 Inicio
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to={'/control'} className="nav-link">
+              <NavLink to={"/control"} className="nav-link">
                 Control proveedores
               </NavLink>
             </li>
@@ -44,17 +44,17 @@ const NavBar = () => {
               </a>
               <ul className="dropdown-menu">
                 <li>
-                  <NavLink to={'/exterior'} className="nav-link">
+                  <NavLink to={"/exterior"} className="nav-link nav-link2">
                     Para el exterior
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to={'/interior'} className="nav-link">
+                  <NavLink to={"/interior"} className="nav-link nav-link2">
                     Para el interior
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to={'/cactus'} className="nav-link">
+                  <NavLink to={"/cactus"} className="nav-link nav-link2">
                     Cactus
                   </NavLink>
                 </li>
@@ -63,17 +63,17 @@ const NavBar = () => {
           </ul>
         </div>
         <ul className="navbar-nav me-auto mb-2 mb-lg-0 sesion">
-            <li className="nav-item">
-              <NavLink to={'/sesion'} className="nav-link">
+          <li className="nav-item">
+            <NavLink to={"/sesion"} className="nav-link">
               <i class="fa-solid fa-right-to-bracket"></i> Iniciar sesión
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink to={'/registro'} className="nav-link">
-              <i class="fa-solid fa-user"></i> Registrarse 
-              </NavLink>
-            </li>
-          </ul>
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink to={"/registro"} className="nav-link">
+              <i class="fa-solid fa-user"></i> Registrarse
+            </NavLink>
+          </li>
+        </ul>
       </div>
     </nav>
   );

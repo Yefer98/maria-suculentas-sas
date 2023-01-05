@@ -1,27 +1,27 @@
-import React from 'react'
-import Footer from './Footer'
-import Header from './Header'
-import loginUser from '../assets/inicio-cliente.png'
+import React from "react";
+import Footer from "./Footer";
+import Header from "./Header";
+import loginUser from "../assets/inicio-cliente.png";
 
 const InicioSesion = () => {
   return (
     <>
-        <Header />
-        <section className='customer-login'>
-          <div className='customer-login-f'>
-            <img src={loginUser} alt="" />
-            <h2>Inicio Sesión cliente</h2>
+      <Header />
+      <section className="customer-login">
+        <div className="customer-login-f">
+          <img src={loginUser} alt="" />
+          <h2>Inicio Sesión cliente</h2>
           <form action="">
-            <input type="text" placeholder='Usuario' />
-            <input type="password" placeholder='Contraseña'/>
-            <input className='inicioS' type="submit" value="Iniciar sesión" />
+            <input type="text" placeholder="Usuario" />
+            <input type="password" placeholder="Contraseña" />
+            <input className="inicioS" type="submit" value="Iniciar sesión" />
           </form>
-          </div>
-        </section>
-    
-        <Footer />
-    </> 
-  )
-}
+        </div>
+      </section>
 
-export default InicioSesion
+      <Footer />
+    </>
+  );
+};
+
+export default InicioSesion;

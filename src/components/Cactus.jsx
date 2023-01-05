@@ -13,17 +13,17 @@ const Cactus = () => {
     <>
       <Header />
       <main>
-      <h1 className="plantExt">Plantas para exterior</h1>
-      <section className="contenedor">
-        <Bolanegra />
-        <Bolarosa />
-        <Bolaoro />
-        <CGracilis />
-        <CMammillaria />
-        <Utah />
-      </section>
+        <h1 className="plantExt">Plantas para exterior</h1>
+        <section className="contenedor">
+          <Bolanegra />
+          <Bolarosa />
+          <Bolaoro />
+          <CGracilis />
+          <CMammillaria />
+          <Utah />
+        </section>
 
-      <Footer />
+        <Footer />
       </main>
     </>
   );

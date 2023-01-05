@@ -13,16 +13,16 @@ const Interior = () => {
     <>
       <Header />
       <main>
-      <h1 className="plantExt">Plantas para interior</h1>
-      <section className="contenedor">
-        <Aloe />
-        <Bonsai />
-        <Camandula />
-        <Collar />
-        <Ovata />
-        <Piedras />
-      </section>
-      <Footer />
+        <h1 className="plantExt">Plantas para interior</h1>
+        <section className="contenedor">
+          <Aloe />
+          <Bonsai />
+          <Camandula />
+          <Collar />
+          <Ovata />
+          <Piedras />
+        </section>
+        <Footer />
       </main>
     </>
   );

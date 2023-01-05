@@ -2,37 +2,18 @@ import React from "react";
 import Faucari from "../../assets/Faucaria-tigrina.jpg";
 
 const cardout = () => {
-  const card = document.getElementById('card');
-  const parrafo1 = document.getElementById('parrafo1');
-  parrafo1.textContent = "Las faucarias amarillas o amarillo doradas, nacen solitarias o en parejas, son sésiles de unos 3 a 5 cm de diámetro y surgen del centro de cada roseta. La floración se da en otoño, en ejemplares de dos años o incluso más jóvenes.";
-  const lista = document.getElementById('lista');
-  const sex = document.getElementsById('sex');
-  const ref = document.getElementsById('ref');
-  const size = document.getElementsById('size');
-  const amount = document.getElementsById('amount');
-  sex.textContent = "";
-  ref.textContent = "";
-  size.textContent = "";
-  amount.textContent = "";
-  card.append(parrafo1);
-}
+  const stats1 = document.querySelector("#stats1");
+  const parrafo1 = document.querySelector("#parrafo1");
+  stats1.style.opacity = "0";
+  parrafo1.style.opacity = "1";
+};
 
 const cardover = () => {
-  const parrafo1 = document.getElementById('parrafo1');
-  parrafo1.textContent = "";
-  const lista = document.createElement('ul');
-  const sex = document.createElement('li');
-  const ref = document.createElement('li');
-  const size = document.createElement('li');
-  const amount = document.createElement('li');
-  sex.textContent = "Sexo: Macho";
-  ref.textContent = "Referencia: Planta para exterior";
-  size.textContent = "Tamaño: 8 cm de altura";
-  amount.textContent = "Cantidad: 50";
-  parrafo1.append(lista)
-  lista.append(sex, ref, size, amount);
-  console.log("Stats")
-}
+  const stats1 = document.querySelector("#stats1");
+  const parrafo1 = document.querySelector("#parrafo1");
+  stats1.style.opacity = "1";
+  parrafo1.style.opacity = "0";
+};
 
 const Faucaria = () => {
   return (
@@ -45,6 +26,14 @@ const Faucaria = () => {
         cada roseta. La floración se da en otoño, en ejemplares de dos años o
         incluso más jóvenes.
       </p>
+      <div className="stats" id="stats1">
+        <ul>
+          <li>Sexo: Macho</li>
+          <li>Referencia: Planta para exterior</li>
+          <li>Tamaño: 8 cm de altura</li>
+          <li>Cantidad: 50</li>
+        </ul>
+      </div>
       <input className="comprar" type="button" value="Comprar" />
     </div>
   );

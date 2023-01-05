@@ -15,29 +15,29 @@ const routes = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: '/registro',
-    element: <Registro />
+    path: "/registro",
+    element: <Registro />,
   },
   {
-    path: '/control',
-    element: <ControlProveedores />
+    path: "/control",
+    element: <ControlProveedores />,
   },
   {
-    path: '/exterior',
-    element: <Exterior />
+    path: "/exterior",
+    element: <Exterior />,
   },
   {
-    path: '/interior',
-    element: <Interior />
+    path: "/interior",
+    element: <Interior />,
   },
   {
-    path: '/cactus',
-    element: <Cactus />
+    path: "/cactus",
+    element: <Cactus />,
   },
   {
-    path: '/sesion',
-    element: <InicioSesion />
-  }
+    path: "/sesion",
+    element: <InicioSesion />,
+  },
 ]);
 
 const App = () => {

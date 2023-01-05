@@ -2,36 +2,18 @@ import React from "react";
 import uta from "../../assets/utah.jpg";
 
 const cardout = () => {
-  const card = document.getElementById('card');
-  const parrafo17 = document.getElementById('parrafo17');
-  parrafo17.textContent = "Este cactus tiene forma de huevo o un poco redondeado y alcanza un tamaño de hasta 6 centímetros de altura y aproximadamente 9 de ancho, y en general no tiene ramas. Se encoge de tamaño y desaparece bajo la tierra en tiempos secos y fríos, por lo que es difícil de encontrar en la mayoría del año.";
-  const lista = document.getElementById('lista');
-  const sex = document.getElementsById('sex');
-  const ref = document.getElementsById('ref');
-  const size = document.getElementsById('size');
-  const amount = document.getElementsById('amount');
-  sex.textContent = "";
-  ref.textContent = "";
-  size.textContent = "";
-  amount.textContent = "";
-  card.append(parrafo17);
-}
+  const stats17 = document.querySelector("#stats17");
+  const parrafo17 = document.querySelector("#parrafo17");
+  stats17.style.opacity = "0";
+  parrafo17.style.opacity = "1";
+};
 
 const cardover = () => {
-  const parrafo17 = document.getElementById('parrafo17');
-  parrafo17.textContent = "";
-  const lista = document.createElement('ul');
-  const sex = document.createElement('li');
-  const ref = document.createElement('li');
-  const size = document.createElement('li');
-  const amount = document.createElement('li');
-  sex.textContent = "Sexo: Hembra";
-  ref.textContent = "Referencia: Cactus";
-  size.textContent = "Tamaño: Max 6 centímetros de altura";
-  amount.textContent = "Cantidad: 80";
-  parrafo17.append(lista)
-  lista.append(sex, ref, size, amount);
-}
+  const stats17 = document.querySelector("#stats17");
+  const parrafo17 = document.querySelector("#parrafo17");
+  stats17.style.opacity = "1";
+  parrafo17.style.opacity = "0";
+};
 
 const Utah = () => {
   return (
@@ -45,6 +27,14 @@ const Utah = () => {
         tierra en tiempos secos y fríos, por lo que es difícil de encontrar en
         la mayoría del año.
       </p>
+      <div className="stats" id="stats17">
+        <ul>
+          <li>Sexo: Hembra</li>
+          <li>Referencia: Cactus</li>
+          <li>Tamaño: Max 6 centímetros de altura</li>
+          <li>Cantidad: 80</li>
+        </ul>
+      </div>
       <input className="comprar" type="button" value="Comprar" />
     </div>
   );

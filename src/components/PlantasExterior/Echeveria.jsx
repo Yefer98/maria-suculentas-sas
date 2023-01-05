@@ -2,36 +2,18 @@ import React from "react";
 import Echeverias from "../../assets/Echeveria.jpg";
 
 const cardout = () => {
-  const card = document.getElementById('card');
-  const parrafo = document.getElementById('parrafo');
-  parrafo.textContent = "Surge de una roseta suculenta casi sin tallo con 7 - 15 cm de altura según la variedad y de la que surgen de 4 a 6 inflorescencias ramosas que alcanzan los 20 cm de altura. Flores rojas y amarillas en la primavera y principios de verano.";
-  const lista = document.getElementById('lista');
-  const sex = document.getElementsById('sex');
-  const ref = document.getElementsById('ref');
-  const size = document.getElementsById('size');
-  const amount = document.getElementsById('amount');
-  sex.textContent = "";
-  ref.textContent = "";
-  size.textContent = "";
-  amount.textContent = "";
-  card.append(parrafo);
-}
+  const stats = document.querySelector("#stats");
+  const parrafo = document.querySelector("#parrafo");
+  stats.style.opacity = "0";
+  parrafo.style.opacity = "1";
+};
 
 const cardover = () => {
-  const parrafo = document.getElementById('parrafo');
-  parrafo.textContent = "";
-  const lista = document.createElement('ul');
-  const sex = document.createElement('li');
-  const ref = document.createElement('li');
-  const size = document.createElement('li');
-  const amount = document.createElement('li');
-  sex.textContent = "Sexo: Hembra";
-  ref.textContent = "Referencia: Planta para exterior";
-  size.textContent = "Tamaño: 7 - 15 cm de altura";
-  amount.textContent = "Cantidad: 100";
-  parrafo.append(lista)
-  lista.append(sex, ref, size, amount);
-}
+  const stats = document.querySelector("#stats");
+  const parrafo = document.querySelector("#parrafo");
+  stats.style.opacity = "1";
+  parrafo.style.opacity = "0";
+};
 
 const Echeveria = () => {
   return (
@@ -44,6 +26,14 @@ const Echeveria = () => {
         que alcanzan los 20 cm de altura. Flores rojas y amarillas en la
         primavera y principios de verano.
       </p>
+      <div className="stats" id="stats">
+        <ul>
+          <li>Sexo: Hembra</li>
+          <li>Referencia: Planta para exterior</li>
+          <li>Tamaño: 7 - 15 cm de altura</li>
+          <li>Cantidad: 100</li>
+        </ul>
+      </div>
       <input className="comprar" type="button" value="Comprar" />
     </div>
   );

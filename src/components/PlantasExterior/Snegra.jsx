@@ -2,36 +2,18 @@ import React from "react";
 import suculenta_negra from "../../assets/suculenta_negra.jpg";
 
 const cardout = () => {
-  const card = document.getElementById('card');
-  const parrafo = document.getElementById('parrafo5');
-  parrafo5.textContent = "Esta planta en el sol, su color es casi negro, lo que provoca un bello contraste con otras plantas en un jardín. Por otro lado, en la sombra parcial llega a tomar un color púrpura con tonos verdes al centro.";
-  const lista = document.getElementById('lista');
-  const sex = document.getElementsById('sex');
-  const ref = document.getElementsById('ref');
-  const size = document.getElementsById('size');
-  const amount = document.getElementsById('amount');
-  sex.textContent = "";
-  ref.textContent = "";
-  size.textContent = "";
-  amount.textContent = "";
-  card.append(parrafo5);
-}
+  const stats5 = document.querySelector("#stats5");
+  const parrafo5 = document.querySelector("#parrafo5");
+  stats5.style.opacity = "0";
+  parrafo5.style.opacity = "5";
+};
 
 const cardover = () => {
-  const parrafo5 = document.getElementById('parrafo5');
-  parrafo5.textContent = "";
-  const lista = document.createElement('ul');
-  const sex = document.createElement('li');
-  const ref = document.createElement('li');
-  const size = document.createElement('li');
-  const amount = document.createElement('li');
-  sex.textContent = "Sexo: Macho";
-  ref.textContent = "Referencia: Planta para exterior";
-  size.textContent = "Tamaño: 60-90 cm de alto y 15-20 cm de ancho";
-  amount.textContent = "Cantidad: 30";
-  parrafo5.append(lista)
-  lista.append(sex, ref, size, amount);
-}
+  const stats5 = document.querySelector("#stats5");
+  const parrafo5 = document.querySelector("#parrafo5");
+  stats5.style.opacity = "5";
+  parrafo5.style.opacity = "0";
+};
 
 const Snegra = () => {
   return (
@@ -43,6 +25,14 @@ const Snegra = () => {
         contraste con otras plantas en un jardín. Por otro lado, en la sombra
         parcial llega a tomar un color púrpura con tonos verdes al centro.
       </p>
+      <div className="stats" id="stats5">
+        <ul>
+          <li>Sexo: Macho</li>
+          <li>Referencia: Planta para exterior</li>
+          <li>Tamaño: 60-90 cm de alto y 15-20 cm de ancho</li>
+          <li>Cantidad: 30</li>
+        </ul>
+      </div>
       <input className="comprar" type="button" value="Comprar" />
     </div>
   );

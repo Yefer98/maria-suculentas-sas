@@ -2,36 +2,22 @@ import React from "react";
 import Aloes from "../../assets/aloe.jpg";
 
 const cardout = () => {
-  const card = document.getElementById('card');
-  const parrafo6 = document.getElementById('parrafo6');
-  parrafo6.textContent = "La planta forma un rosetón pequeño (15 a 30 cm de diámetro), sin tallo, con hojas dentadas y suculentas. El tallo floral sale del centro de la planta. Sus flores, ricas en néctar suelen atraer pájaros, abejas y avispas.";
-  const lista = document.getElementById('lista');
-  const sex = document.getElementsById('sex');
-  const ref = document.getElementsById('ref');
-  const size = document.getElementsById('size');
-  const amount = document.getElementsById('amount');
-  sex.textContent = "";
-  ref.textContent = "";
-  size.textContent = "";
-  amount.textContent = "";
-  card.append(parrafo6);
-}
+  const stats6 = document.querySelector("#stats6");
+  const parrafo6 = document.querySelector("#parrafo6");
+  stats6.style.opacity = "0";
+  parrafo6.style.opacity = "1";
+  stats6.style.transition = "1s";
+  parrafo6.style.transition = "1s";
+};
 
 const cardover = () => {
-  const parrafo6 = document.getElementById('parrafo6');
-  parrafo6.textContent = "";
-  const lista = document.createElement('ul');
-  const sex = document.createElement('li');
-  const ref = document.createElement('li');
-  const size = document.createElement('li');
-  const amount = document.createElement('li');
-  sex.textContent = "Sexo: Hembra";
-  ref.textContent = "Referencia: Planta para interior";
-  size.textContent = "Tamaño: 40-50 cm de largo por 10-15 cm de ancho";
-  amount.textContent = "Cantidad: 40";
-  parrafo6.append(lista)
-  lista.append(sex, ref, size, amount);
-}
+  const stats6 = document.querySelector("#stats6");
+  const parrafo6 = document.querySelector("#parrafo6");
+  stats6.style.opacity = "1";
+  parrafo6.style.opacity = "0";
+  stats6.style.transition = "1s";
+  parrafo6.style.transition = "1s";
+};
 
 const Aloe = () => {
   return (
@@ -44,6 +30,14 @@ const Aloe = () => {
         planta. Sus flores, ricas en néctar suelen atraer pájaros, abejas y
         avispas.
       </p>
+      <div className="stats" id="stats6">
+        <ul>
+          <li>Sexo: Hembra</li>
+          <li>Referencia: Planta para interior</li>
+          <li>Tamaño: 40-50 cm de largo por 10-15 cm de ancho</li>
+          <li>Cantidad: 40</li>
+        </ul>
+      </div>
       <input className="comprar" type="button" value="Comprar" />
     </div>
   );

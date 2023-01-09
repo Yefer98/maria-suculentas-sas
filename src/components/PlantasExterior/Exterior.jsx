@@ -1,12 +1,12 @@
 import React from "react";
-import Footer from "./Footer";
-import Header from "./Header";
-import Echeveria from "./PlantasExterior/Echeveria";
-import Faucaria from "./PlantasExterior/Faucaria";
-import Garraoso from "./PlantasExterior/Garraoso";
-import Orejas from "./PlantasExterior/Orejas";
-import Sedum from "./PlantasExterior/Sedum";
-import Snegra from "./PlantasExterior/Snegra";
+import Footer from "../Footer";
+import Header from "../Header";
+import Echeveria from "./Echeveria";
+import Faucaria from "./Faucaria";
+import Garraoso from "./Garraoso";
+import Orejas from "./Orejas";
+import Sedum from "./Sedum";
+import Snegra from "./Snegra";
 
 const Exterior = () => {
   return (

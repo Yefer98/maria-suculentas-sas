@@ -1,12 +1,12 @@
 import React from "react";
-import Footer from "./Footer";
-import Header from "./Header";
-import Aloe from "./PlantasInterior/Aloe";
-import Bonsai from "./PlantasInterior/Bonsai";
-import Camandula from "./PlantasInterior/Camandula";
-import Collar from "./PlantasInterior/Collar";
-import Ovata from "./PlantasInterior/Ovata";
-import Piedras from "./PlantasInterior/Piedras";
+import Footer from "../Footer";
+import Header from "../Header";
+import Aloe from "./Aloe";
+import Bonsai from "./Bonsai";
+import Camandula from "./Camandula";
+import Collar from "./Collar";
+import Ovata from "./Ovata";
+import Piedras from "./Piedras";
 
 const Interior = () => {
   return (

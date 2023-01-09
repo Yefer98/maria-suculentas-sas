@@ -1,10 +1,10 @@
 import React from "react";
-import Drosera from "./Galeria/Drosera";
-import Lithops from "./Galeria/Lithops";
-import Moringa from "./Galeria/Moringa";
-import RicinoRojo from "./Galeria/RicinoRojo";
-import RicinoVerde from "./Galeria/RicinoVerde";
-import SanchaInchi from "./Galeria/SanchaInchi";
+import Drosera from "./Drosera";
+import Lithops from "./Lithops";
+import Moringa from "./Moringa";
+import RicinoRojo from "./RicinoRojo";
+import RicinoVerde from "./RicinoVerde";
+import SanchaInchi from "./SanchaInchi";
 
 const Galeria = () => {
   return (

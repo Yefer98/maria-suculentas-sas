@@ -145,7 +145,7 @@ a.navbar-brand.active{
 
 .logo:hover{
     transition: .5s;
-    transform: scale(1.2);
+    transform: scale(1.05);
 }
 
 /* -------------> Exterior <------------- */
